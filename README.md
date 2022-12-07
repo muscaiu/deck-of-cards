@@ -1,5 +1,5 @@
 <h1 align="center">
-  Deck of cards
+ 🚀 Deck of cards
 </h1>
 
 1.  **Clone Repo**
@@ -8,7 +8,7 @@
     git clone https://github.com/muscaiu/deck-of-cards
     ```
 
-2.  **Install dependecinies**
+2.  **Install dependecinies (using node 18 and npm 8)**
 
     ```shell
     npm install
@@ -29,5 +29,3 @@
     ```
 
 ## [ 🚀 Live Demo](https://deckofcardsmaster.gatsbyjs.io)
-
-## 🚀 Built with GatsbyJs
