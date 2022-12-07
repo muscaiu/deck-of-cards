@@ -1,0 +1,49 @@
+.card {
+  touch-action: none;
+  z-index: 1;
+  padding: 10px;
+  transition: var(--transition);
+  animation: fadeIn ease 2s;
+}
+
+.cardImg {
+  width: 3.875rem;
+  height: 5.5rem;
+  cursor: pointer;
+}
+
+.shuffle-btn,
+.sort-btn {
+  width: 270px;
+  background: white;
+  color: black;
+  margin: 20px 0;
+  font-size: 1.6rem;
+  padding: 12px 36px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 21px;
+
+  &:hover {
+    background-color: #b3b3b3;
+  }
+}
+
+.sort-btn-container {
+  display: flex;
+  justify-content: center;
+
+  .sort-btn:nth-child(2) {
+    margin-left: 20px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

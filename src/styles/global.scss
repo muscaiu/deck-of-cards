@@ -1,0 +1,34 @@
+:root {
+  --font-family: "Times New Roman", Times, serif;
+  --purple: hsl(230deg, 100%, 69%);
+  --transition: all 1s linear;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--purple);
+  // background: #2d9c3a;
+  background-color: #333;
+  background-image: url("https://www.audi.co.uk/content/dam/nemo/uk/Future-is-an-Attitude/brand-page-assets/stage/v5-xmax-D-Stage_Large_600.webp?imwidth=1920");
+  background-repeat: no-repeat;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+nav {
+  height: 72px;
+  background: white;
+}

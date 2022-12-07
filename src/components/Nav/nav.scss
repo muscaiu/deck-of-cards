@@ -1,0 +1,14 @@
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  padding-left: 96px;
+  margin-right: 24px;
+}
+.nav-item {
+  margin: 0 24px;
+  cursor: pointer;
+  color: #666666;
+}
