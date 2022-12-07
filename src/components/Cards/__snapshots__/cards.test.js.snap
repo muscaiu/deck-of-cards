@@ -1,31 +1,63 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`card renders correctly 1`] = `
+exports[`cards renders correctly 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <span
-        class="card"
+      <div>
+        Something went wrong...
+      </div>
+      <div
+        class="cards"
       >
-        <img
-          alt=""
-          class="cardImg"
-          src="string"
+        <div
+          class="btn-container"
+        >
+          <div
+            class="shuffle-btn"
+          >
+            shuffle
+          </div>
+        </div>
+        <p
+          class="info"
+        >
+          or click some cards
+        </p>
+        <div />
+        <div
+          class="selected-cards"
         />
-      </span>
+      </div>
     </div>
   </body>,
   "container": <div>
-    <span
-      class="card"
+    <div>
+      Something went wrong...
+    </div>
+    <div
+      class="cards"
     >
-      <img
-        alt=""
-        class="cardImg"
-        src="string"
+      <div
+        class="btn-container"
+      >
+        <div
+          class="shuffle-btn"
+        >
+          shuffle
+        </div>
+      </div>
+      <p
+        class="info"
+      >
+        or click some cards
+      </p>
+      <div />
+      <div
+        class="selected-cards"
       />
-    </span>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

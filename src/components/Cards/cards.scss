@@ -1,15 +1,14 @@
-.card {
-  touch-action: none;
-  z-index: 1;
-  padding: 10px;
+.cards {
   transition: var(--transition);
   animation: fadeIn ease 2s;
 }
+.btn-container {
+  display: flex;
+  justify-content: center;
 
-.cardImg {
-  width: 3.875rem;
-  height: 5.5rem;
-  cursor: pointer;
+  .sort-btn:nth-child(2) {
+    margin-left: 20px;
+  }
 }
 
 .shuffle-btn,
@@ -24,19 +23,18 @@
   cursor: pointer;
   font-weight: 400;
   font-size: 21px;
+  transition: var(--transition);
+  animation: fadeIn ease 2s;
 
   &:hover {
     background-color: #b3b3b3;
   }
 }
 
-.sort-btn-container {
-  display: flex;
-  justify-content: center;
-
-  .sort-btn:nth-child(2) {
-    margin-left: 20px;
-  }
+.info {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
 @keyframes fadeIn {

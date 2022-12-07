@@ -1,7 +1,7 @@
 import React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 
-import Cards from "../components/Cards";
+import Cards from "../components/Cards/Cards";
 import Nav from "../components/Nav/Nav";
 
 const IndexPage: React.FC<PageProps> = () => {

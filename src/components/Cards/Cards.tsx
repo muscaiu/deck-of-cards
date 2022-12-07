@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-import Card from "./Card";
-import useFetchCards from "../hooks/useFetchCards";
-import { CardInterface } from "../types/types";
+import Card from "../Card/Card";
+import useFetchCards from "../../hooks/useFetchCards";
+import { CardInterface } from "../../types/types";
 
-import "./card.scss";
+import "./cards.scss";
 
 const Cards: React.FC = () => {
   const [{ cards, setCards, isLoading, isError }] = useFetchCards();
@@ -31,6 +31,7 @@ const Cards: React.FC = () => {
 
     setSelectedCards(sortedCards);
   };
+
   const handleSortHighToLow = () => {
     const sortedCards = selectedCards
       .sort((a, b) => a.sortOrder - b.sortOrder || b.value - a.value)
@@ -46,28 +47,40 @@ const Cards: React.FC = () => {
       {isLoading ? (
         <div>Loading...</div>
       ) : (
-        <div>
-          <div className="sort-btn-container">
+        <div className="cards">
+          <div className="btn-container">
             <div className="shuffle-btn" onClick={handleShuffle}>
               shuffle
             </div>
           </div>
+          <p className="info">or click some cards</p>
 
-          <div className="cards">
+          <div>
             {cards &&
               cards.map((card, i) => (
                 <Card key={i} card={card} onClick={handleCardClick} />
               ))}
           </div>
 
-          <div className="sort-btn-container">
-            <div className="sort-btn" onClick={handleSortHighToLow}>
-              sort ↓
-            </div>
-            <div className="sort-btn" onClick={handleSortLowToHigh}>
-              sort ↑
-            </div>
-          </div>
+          {selectedCards.length ? (
+            <>
+              <div className="btn-container">
+                <div className="sort-btn" onClick={handleSortHighToLow}>
+                  sort ↓
+                </div>
+                <div className="sort-btn" onClick={handleSortLowToHigh}>
+                  sort ↑
+                </div>
+              </div>
+              <div className="info">
+                <p>you can now sort the selected cards</p>
+                <p>
+                  (order is: Clubs, Spades, Hearts, Diamonds; then by value: Ace
+                  is high)
+                </p>
+              </div>
+            </>
+          ) : null}
 
           <div className="selected-cards">
             {selectedCards &&

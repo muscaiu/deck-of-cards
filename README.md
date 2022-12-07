@@ -2,30 +2,32 @@
   Deck of cards
 </h1>
 
-## 🚀 Built with GatsbyJs
+1.  **Clone Repo**
 
-1.  **Install dependecinies**
+    ```shell
+    git clone https://github.com/muscaiu/deck-of-cards
+    ```
+
+2.  **Install dependecinies**
 
     ```shell
     npm install
     ```
 
-2.  **Start**
+3.  **Start**
 
-    Start in dev mode:
+    Start in dev mode: http://localhost:8000
 
     ```shell
     npm run develop
     ```
 
-    Dev mode port: http://localhost:8000
-
-    Or start in prod mode:
+    Or start in prod mode:http://localhost:9000
 
     ```shell
     npm start
     ```
 
-    Prod mode port: http://localhost:9000
+## [ 🚀 Live Demo](https://deckofcardsmaster.gatsbyjs.io)
 
-## 🚀 Live Demo
+## 🚀 Built with GatsbyJs

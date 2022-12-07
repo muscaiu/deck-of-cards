@@ -1,6 +1,8 @@
 import React from "react";
 
-import { CardInterface } from "../types/types";
+import { CardInterface } from "../../types/types";
+
+import "./card.scss";
 
 interface Props {
   card: CardInterface;
@@ -10,7 +12,7 @@ interface Props {
 const Card: React.FC<Props> = ({ card, onClick }) => {
   return (
     <span onClick={() => onClick && onClick(card)} className="card">
-      <img className="cardImg" src={card.img} alt="" />
+      <img className="card-img" src={card.img} alt="" />
     </span>
   );
 };

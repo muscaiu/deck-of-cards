@@ -1,0 +1,22 @@
+.card {
+  touch-action: none;
+  z-index: 1;
+  padding: 10px;
+  transition: var(--transition);
+  animation: fadeIn ease 2s;
+}
+
+.card-img {
+  width: 3.875rem;
+  height: 5.5rem;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
